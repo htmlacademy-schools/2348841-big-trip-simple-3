@@ -70,6 +70,7 @@ export default class TripPointApiService extends ApiService {
     delete adaptedTripPoint.dateTo;
     delete adaptedTripPoint.basePrice;
     delete adaptedTripPoint.offersIDs;
+
     return adaptedTripPoint;
   }
 }
