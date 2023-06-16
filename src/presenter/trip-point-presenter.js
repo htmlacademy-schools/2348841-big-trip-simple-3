@@ -149,6 +149,7 @@ export default class TripPointPresenter {
 
   #handleFormSubmit = (update) => {
     const isMinorUpdate = !isDatesEqual(this.#tripPoint.dateFrom, update.dateFrom) || this.#tripPoint.basePrice !== update.basePrice;
+
     this.#handleDataChange(
       UserAction.UPDATE_TRIPPOINT,
       isMinorUpdate ? UpdateType.MINOR : UpdateType.PATCH,
