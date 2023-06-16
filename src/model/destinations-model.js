@@ -18,10 +18,8 @@ export default class DestinationsModel extends Observable {
     }
   }
 
-
   get destinations() {
     return this.#destinations;
   }
-
 
 }
