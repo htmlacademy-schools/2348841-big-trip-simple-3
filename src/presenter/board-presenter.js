@@ -130,14 +130,17 @@ export default class BoardPresenter {
       case UpdateType.PATCH:
         this.#tripPointPresenter.get(data.id).init(data, this.destinations, this.offers);
         break;
+
       case UpdateType.MINOR:
         this.#clearBoard();
         this.#renderBoard();
         break;
+
       case UpdateType.MAJOR:
         this.#clearBoard({resetSortType: true});
         this.#renderBoard();
         break;
+
       case UpdateType.INIT:
         this.#isLoading = false;
         remove(this.#loadingComponent);
