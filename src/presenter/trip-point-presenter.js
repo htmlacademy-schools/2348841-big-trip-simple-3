@@ -59,9 +59,11 @@ export default class TripPointPresenter {
     }
 
     switch (this.#mode) {
+
       case Mode.DEFAULT:
         replace(this.#tripPointComponent, prevTripPointComponent);
         break;
+
       case Mode.EDITING:
         replace(this.#tripPointComponent, prevEditFormComponent);
         this.#mode = Mode.DEFAULT;
