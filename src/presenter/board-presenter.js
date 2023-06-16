@@ -238,7 +238,6 @@ export default class BoardPresenter {
     this.#renderSort();
     render(this.#tripPointsListComponent, this.#boardContainer);
     this.#renderTripPoints(tripPoints);
-
   }
 
 }
