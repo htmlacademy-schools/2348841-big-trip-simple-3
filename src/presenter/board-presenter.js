@@ -223,15 +223,17 @@ export default class BoardPresenter {
   }
 
   #renderBoard() {
-
     if(this.#isLoading) {
       this.#renderLoading();
+
       return;
     }
+
     const tripPoints = this.tripPoints;
 
     if (tripPoints.length === 0) {
       this.#renderNoTripPoints();
+
       return;
     }
 
