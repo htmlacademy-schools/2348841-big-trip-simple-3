@@ -155,6 +155,7 @@ export default class TripPointPresenter {
       isMinorUpdate ? UpdateType.MINOR : UpdateType.PATCH,
       update,
     );
+
     document.body.removeEventListener('keydown', this.#ecsKeyDownHandler);
   };
 
