@@ -16,7 +16,6 @@ const BLANK_TRIPPOINT = {
   type: 'flight'
 };
 
-
 const createDestinationPicsTemplate = (destination) => (destination.pictures
   .map((pic) => `
   <img class="event__photo" src="${pic.src}" alt="${pic.description}">
@@ -92,7 +91,6 @@ const getDeleteTitle = (isEditForm, isDeleting) => {
   }
   return (isDeleting) ? 'Deleting...' : 'Delete';
 };
-
 
 const createEditFormTemplate = (tripPoint, destinations, offers, isEditForm) => {
   if (!tripPoint.destination) {
