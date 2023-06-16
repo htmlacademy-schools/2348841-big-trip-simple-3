@@ -92,6 +92,7 @@ export default class BoardPresenter {
   #handleViewAction = async (actionType, updateType, update) => {
     this.#uiBlocker.block();
     switch (actionType) {
+
       case UserAction.ADD_TRIPPOINT:
         this.#tripPointPresenter.get(update.id).setSaving();
         try {
