@@ -100,6 +100,7 @@ export default class BoardPresenter {
           this.#tripPointPresenter.get(update.id).setAborting();
         }
         break;
+
       case UserAction.UPDATE_TRIPPOINT:
         this.#tripPointPresenter.get(update.id).setSaving();
         try {
@@ -108,6 +109,7 @@ export default class BoardPresenter {
           this.#tripPointPresenter.get(update.id).setAborting();
         }
         break;
+
       case UserAction.DELETE_TRIPPOINT:
         this.#tripPointPresenter.get(update.id).setDeleting();
         try {
