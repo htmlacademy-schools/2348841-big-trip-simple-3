@@ -335,6 +335,7 @@ export default class EditFormView extends AbstractStatefulView {
     delete tripPoint.isDisabled;
     delete tripPoint.isSaving;
     delete tripPoint.isDeleting;
+
     return tripPoint;
   }
 }
